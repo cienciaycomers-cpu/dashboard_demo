@@ -5,6 +5,7 @@
 | Feature | Description | Status |
 |---|---|---|
 | `paid-media-dashboard` | Ordered delivery plan for the offline portfolio dashboard | Planning complete |
+| `fm-signal-redesign` | Sequenced plan for the reversible FM Signal experience | Planning complete |
 
 ## Cross-cutting principles
 

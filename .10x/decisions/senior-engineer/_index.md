@@ -5,6 +5,7 @@
 | Feature | Description | Status |
 |---|---|---|
 | `paid-media-dashboard` | Implementation approach for the planned dashboard tasks | Planning complete |
+| `fm-signal-redesign` | Route, view-model, visual, motion and QA implementation approach | Planning complete |
 
 ## Cross-cutting principles
 

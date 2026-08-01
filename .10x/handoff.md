@@ -72,6 +72,15 @@ El usuario aprobó iniciar un proyecto paralelo de rediseño visual dentro del m
 - Motion for React controls bounded animation with a reduced-motion path.
 - Next phase: task breakdown and implementation sequencing. No code yet.
 
+## Planning complete - FM Signal
+
+- Delivery plan: `.10x/decisions/engineering-manager/fm-signal-redesign.md`.
+- Implementation approach: `.10x/decisions/senior-engineer/fm-signal-redesign.md`.
+- T1 starts with route shell and selector; T2 protects shared metric semantics.
+- T3-T7 build the visual system, chapters, motion and evidence-backed hypothesis.
+- T8 verifies routes, responsiveness, accessibility, missing data and regressions.
+- Implementation may begin only after this planning checkpoint.
+
 ## Correccion de lectura de ACOS y periodo
 
 - El periodo visible se expresa como mes en curso o mes calendario.

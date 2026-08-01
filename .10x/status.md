@@ -26,7 +26,7 @@ Fase 4 - Implementation in progress.
 - Fase 0 - Brainstorming y diseño inicial: completado y aprobado.
 - Fase 1 - Estrategia: completada.
 - Fase 2 - Arquitectura visual y técnica: completada.
-- Fase 3 - Plan de implementación: pendiente.
+- Fase 3 - Plan de implementación: completada.
 - Fase 4 - Implementación: bloqueada hasta completar estrategia, arquitectura y planificación.
 
 ## Decisiones aprobadas
@@ -42,6 +42,7 @@ Fase 4 - Implementation in progress.
 - Nombre de producto: FM Signal / Paid Media Intelligence.
 - La recomendación final será una hipótesis accionable sustentada por métricas, no una orden automática.
 - Motion para React aprobado como motor de interacción.
+- Plan aprobado: T1 rutas, T2 view models, T3 sistema visual, T4 hero, T5 capítulos, T6 motion, T7 hipótesis, T8 QA.
 
 ## Ultima correccion
 
