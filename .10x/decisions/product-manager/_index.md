@@ -5,6 +5,7 @@
 | Feature | Description | Status | Priority |
 |---|---|---|---|
 | `paid-media-dashboard` | Portfolio experience for paid-media monitoring and profitability | Strategy complete | P0/P1 |
+| `fm-signal-redesign` | Experimental portfolio layer for paid-media intelligence | Strategy complete | P1 |
 
 ## Cross-cutting principles
 

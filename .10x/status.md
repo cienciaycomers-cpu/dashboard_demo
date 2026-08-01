@@ -24,7 +24,7 @@ Fase 4 - Implementation in progress.
 ## Proyecto paralelo: FM Signal
 
 - Fase 0 - Brainstorming y diseño inicial: completado y aprobado.
-- Fase 1 - Estrategia: pendiente.
+- Fase 1 - Estrategia: completada.
 - Fase 2 - Arquitectura visual y técnica: pendiente.
 - Fase 3 - Plan de implementación: pendiente.
 - Fase 4 - Implementación: bloqueada hasta completar estrategia, arquitectura y planificación.
@@ -39,6 +39,7 @@ Fase 4 - Implementation in progress.
 - Híbrido SVG/CSS con profundidad y parallax controlado.
 - Primera escena enfocada en rentabilidad.
 - Nombre de producto: FM Signal / Paid Media Intelligence.
+- La recomendación final será una hipótesis accionable sustentada por métricas, no una orden automática.
 
 ## Ultima correccion
 

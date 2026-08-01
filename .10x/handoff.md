@@ -53,6 +53,15 @@ El usuario aprobó iniciar un proyecto paralelo de rediseño visual dentro del m
 - Primer foco: rentabilidad.
 - Responsive completo, prioridad desktop.
 
+## Strategy complete - FM Signal
+
+- CTO/PM strategy is documented in `.10x/decisions/cto/fm-signal-redesign.md` and `.10x/decisions/product-manager/fm-signal-redesign.md`.
+- Build as a reversible `/signal` route sharing the existing data and metric domain.
+- Audience: portfolio visitors, prospective clients and collaborators.
+- Primary success: balance visual impact with analytical depth within the first minute.
+- Close with evidence-backed hypothesis, not automatic budget action.
+- Next phase: visual/system architecture and interaction boundaries. No implementation yet.
+
 ## Correccion de lectura de ACOS y periodo
 
 - El periodo visible se expresa como mes en curso o mes calendario.

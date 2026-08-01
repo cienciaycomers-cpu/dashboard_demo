@@ -5,6 +5,7 @@
 | Feature | Description | Status |
 |---|---|---|
 | `paid-media-dashboard` | Public portfolio dashboard for Faithis demo e-commerce | Strategy complete |
+| `fm-signal-redesign` | Immersive portfolio experience for paid-media intelligence | Strategy complete |
 
 ## Cross-cutting principles
 
