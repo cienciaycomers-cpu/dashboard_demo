@@ -46,6 +46,7 @@ El usuario aprobó iniciar un proyecto paralelo de rediseño visual dentro del m
 - Feature slug: `fm-signal-redesign`.
 - Spec aprobada: `.10x/specs/2026-08-01-fm-signal-redesign-design.md`.
 - Ruta objetivo: `/signal`.
+- Selector de experiencias: `/select`; mantener `/` sin cambios.
 - La versión actual en `/` debe permanecer estable.
 - Dirección: Data Cinema + luxury editorial.
 - Interacción: scroll vertical narrativo, parallax y capas de profundidad.

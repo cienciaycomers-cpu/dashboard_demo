@@ -12,7 +12,7 @@ Crear una experiencia de portfolio inmersiva e innovadora para el dashboard de p
 
 - La versión actual continúa disponible en `/`.
 - FM Signal se implementará en `/signal`.
-- Una landing inicial permite elegir entre `Classic Dashboard` y `FM Signal`.
+- Una landing inicial en `/select` permite elegir entre `Classic Dashboard` y `FM Signal`.
 - Ambas experiencias comparten dataset, motor de métricas, filtros, alertas y reglas de rentabilidad.
 - FM Signal no reemplaza ni modifica la vista operativa actual hasta una aprobación posterior.
 

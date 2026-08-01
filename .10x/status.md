@@ -32,6 +32,7 @@ Fase 4 - Implementation in progress.
 ## Decisiones aprobadas
 
 - Nueva experiencia en `/signal` dentro del mismo proyecto.
+- Landing de selección en `/select`; `/` permanece como dashboard actual.
 - Landing inicial para elegir `Classic Dashboard` o `FM Signal`.
 - Dirección Data Cinema + luxury editorial.
 - Scroll vertical narrativo con interacción experimental.
