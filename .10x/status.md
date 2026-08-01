@@ -21,6 +21,25 @@ Fase 4 - Implementation in progress.
 - T9 responsive y accesibilidad - en revision.
 - T10 verificacion y portfolio readiness - pendiente.
 
+## Proyecto paralelo: FM Signal
+
+- Fase 0 - Brainstorming y diseño inicial: completado y aprobado.
+- Fase 1 - Estrategia: pendiente.
+- Fase 2 - Arquitectura visual y técnica: pendiente.
+- Fase 3 - Plan de implementación: pendiente.
+- Fase 4 - Implementación: bloqueada hasta completar estrategia, arquitectura y planificación.
+
+## Decisiones aprobadas
+
+- Nueva experiencia en `/signal` dentro del mismo proyecto.
+- Landing inicial para elegir `Classic Dashboard` o `FM Signal`.
+- Dirección Data Cinema + luxury editorial.
+- Scroll vertical narrativo con interacción experimental.
+- Responsive completo, con prioridad visual desktop.
+- Híbrido SVG/CSS con profundidad y parallax controlado.
+- Primera escena enfocada en rentabilidad.
+- Nombre de producto: FM Signal / Paid Media Intelligence.
+
 ## Ultima correccion
 
 - El contexto de fechas comunica mes en curso o mes calendario, no una ventana movil de 30 dias.

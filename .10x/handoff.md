@@ -39,6 +39,20 @@ SDE completo T5-T8: shell visual, filtros, view models, secciones, alertas y det
 - Mantener denominadores explicitos para ACOS bruto y margen neto.
 - No usar runtime fetch externo.
 
+## Handoff - FM Signal
+
+El usuario aprobó iniciar un proyecto paralelo de rediseño visual dentro del mismo proyecto. El siguiente rol debe trabajar estrategia y alcance, sin implementar todavía.
+
+- Feature slug: `fm-signal-redesign`.
+- Spec aprobada: `.10x/specs/2026-08-01-fm-signal-redesign-design.md`.
+- Ruta objetivo: `/signal`.
+- La versión actual en `/` debe permanecer estable.
+- Dirección: Data Cinema + luxury editorial.
+- Interacción: scroll vertical narrativo, parallax y capas de profundidad.
+- Alcance: conservar la lógica y sumar storytelling visual.
+- Primer foco: rentabilidad.
+- Responsive completo, prioridad desktop.
+
 ## Correccion de lectura de ACOS y periodo
 
 - El periodo visible se expresa como mes en curso o mes calendario.
