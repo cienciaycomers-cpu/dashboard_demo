@@ -5,6 +5,7 @@
 | Feature | Description | Status |
 |---|---|---|
 | `paid-media-dashboard` | Standards for maintainable offline dashboard implementation | Design complete |
+| `fm-signal-redesign` | Shared domain with isolated cinematic presentation and reduced-motion support | Design complete |
 
 ## Cross-cutting principles
 

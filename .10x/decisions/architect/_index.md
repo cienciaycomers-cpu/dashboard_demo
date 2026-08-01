@@ -5,6 +5,7 @@
 | Feature | Description | Status |
 |---|---|---|
 | `paid-media-dashboard` | Offline-capable React dashboard with local data model | Design complete |
+| `fm-signal-redesign` | Reversible `/signal` presentation layer with Motion for React and SVG/CSS visuals | Design complete |
 
 ## Cross-cutting principles
 

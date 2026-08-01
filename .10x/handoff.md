@@ -63,6 +63,15 @@ El usuario aprobó iniciar un proyecto paralelo de rediseño visual dentro del m
 - Close with evidence-backed hypothesis, not automatic budget action.
 - Next phase: visual/system architecture and interaction boundaries. No implementation yet.
 
+## Architecture complete - FM Signal
+
+- Architecture decisions: `.10x/decisions/architect/fm-signal-redesign.md`.
+- Staff engineering standards: `.10x/decisions/staff-engineer/fm-signal-redesign.md`.
+- Presentation is isolated in `/signal`; existing domain/view models remain shared.
+- `/select` is a lightweight selector; `/` remains unchanged.
+- Motion for React controls bounded animation with a reduced-motion path.
+- Next phase: task breakdown and implementation sequencing. No code yet.
+
 ## Correccion de lectura de ACOS y periodo
 
 - El periodo visible se expresa como mes en curso o mes calendario.
