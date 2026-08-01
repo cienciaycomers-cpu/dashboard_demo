@@ -81,6 +81,15 @@ El usuario aprobó iniciar un proyecto paralelo de rediseño visual dentro del m
 - T8 verifies routes, responsiveness, accessibility, missing data and regressions.
 - Implementation may begin only after this planning checkpoint.
 
+## T1 complete - FM Signal
+
+- Route shell implemented in `src/main.tsx`.
+- Selector implemented in `src/app/ExperienceSelector.tsx`.
+- Initial FM Signal shell implemented in `src/app/SignalShell.tsx`.
+- Existing `/` dashboard remains the default fallback.
+- Typecheck, 10 source tests and production build pass.
+- Next task: T2 shared view-model adapter, then static visual system before motion.
+
 ## Correccion de lectura de ACOS y periodo
 
 - El periodo visible se expresa como mes en curso o mes calendario.

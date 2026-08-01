@@ -5,6 +5,7 @@
 | Feature | Description | Status |
 |---|---|---|
 | `paid-media-dashboard` | Implementation of the offline Faithis portfolio dashboard | T1-T4 complete, T5/T6 in progress |
+| `fm-signal-redesign` | Route shell and selector implemented; cinematic chapters pending | T1 complete |
 
 ## Cross-cutting notes
 

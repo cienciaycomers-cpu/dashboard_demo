@@ -19,6 +19,27 @@
 }
 
 * { box-sizing: border-box; }
+body { min-height: 100vh; }
+.experience-selector, .signal-placeholder { min-height: 100vh; padding: 72px 7vw; background: #11100e; color: #f2eee5; }
+.selector-shell { max-width: 1180px; margin: 0 auto; }
+.selector-eyebrow { margin: 0 0 36px; color: #b99b64; font-size: .68rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+.experience-selector h1, .signal-placeholder h1 { max-width: 760px; margin: 0; font-family: Georgia, serif; font-size: clamp(3.8rem, 8vw, 8.5rem); font-weight: 400; line-height: .88; letter-spacing: -.07em; }
+.experience-selector h1 em, .signal-placeholder h1 em { color: #b99b64; font-style: italic; }
+.selector-intro, .signal-placeholder p:not(.selector-eyebrow) { max-width: 390px; margin: 38px 0 70px; color: #a9a399; font-size: .92rem; line-height: 1.7; }
+.selector-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.experience-card { min-height: 250px; display: flex; flex-direction: column; justify-content: space-between; padding: 28px; color: #f2eee5; text-decoration: none; transition: transform .35s ease, border-color .35s ease; }
+.experience-card:hover { transform: translateY(-8px); }
+.experience-card-classic { border: 1px solid #373632; background: #181816; }
+.experience-card-signal { border: 1px solid #665b45; background: radial-gradient(circle at 90% 10%, #5d4a29, transparent 45%), linear-gradient(135deg, #24211b, #151411); }
+.experience-index { color: #8e8a81; font-size: .72rem; letter-spacing: .14em; }
+.experience-card strong, .experience-card div span { display: block; }
+.experience-card strong { font-family: Georgia, serif; font-size: clamp(1.6rem, 3vw, 2.5rem); font-weight: 400; }
+.experience-card div span { margin-top: 8px; color: #a9a399; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
+.experience-arrow { align-self: end; color: #b99b64; font-size: 1.5rem; }
+.signal-placeholder { display: grid; align-content: center; }
+.signal-placeholder p:not(.selector-eyebrow) { margin-bottom: 28px; }
+.signal-placeholder a { color: #b99b64; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; }
+@media (max-width: 700px) { .experience-selector, .signal-placeholder { padding: 38px 20px; }.selector-grid { grid-template-columns: 1fr; }.experience-card { min-height: 190px; }.experience-selector h1, .signal-placeholder h1 { font-size: clamp(3.4rem, 17vw, 5.5rem); } }
 body { margin: 0; min-width: 320px; min-height: 100vh; background: var(--bg); }
 button, select { font: inherit; }
 button { cursor: pointer; }

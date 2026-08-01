@@ -27,7 +27,18 @@ Fase 4 - Implementation in progress.
 - Fase 1 - Estrategia: completada.
 - Fase 2 - Arquitectura visual y técnica: completada.
 - Fase 3 - Plan de implementación: completada.
-- Fase 4 - Implementación: bloqueada hasta completar estrategia, arquitectura y planificación.
+- Fase 4 - Implementación: en progreso.
+
+### FM Signal tasks
+
+- T1 - Rutas `/`, `/select` y `/signal` + selector: completado y verificado.
+- T2 - View-model adapter compartido: pendiente.
+- T3 - Sistema visual FM Signal: pendiente.
+- T4 - Hero de rentabilidad: pendiente.
+- T5 - Capítulos narrativos: pendiente.
+- T6 - Motion para React: pendiente.
+- T7 - Hipótesis de inversión: pendiente.
+- T8 - QA y regresión: pendiente.
 
 ## Decisiones aprobadas
 
