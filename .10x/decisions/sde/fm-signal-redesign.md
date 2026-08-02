@@ -16,6 +16,21 @@ Verification:
 - `npm test -- --run` passed: 10 tests in the source tree.
 - `npm run build` passed.
 
+## T7-T8 - evidence-backed hypothesis and final QA
+
+- Reframed the closing recommendation as a portfolio hypothesis: test a controlled investment increase and observe marginal ACOS before scaling the full budget.
+- Kept the recommendation conditional on efficiency and positive margin states from the shared view model.
+- Normalized FM Signal copy to plain UTF-8-safe text to avoid mojibake in the presentation layer.
+- Confirmed responsive rules for desktop and mobile layouts, preserved missing values as `Sin dato`, and kept reduced-motion behavior active.
+- Confirmed the classic dashboard route remains separate from FM Signal.
+
+Verification:
+
+- `npm run typecheck` passed.
+- `npm test -- --run` passed: 13 tests.
+- `npm run build` passed.
+- `git diff --check` passed.
+
 ## T6 - bounded Motion interactions
 
 - Added `motion` as the interaction runtime for FM Signal.

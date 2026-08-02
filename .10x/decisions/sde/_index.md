@@ -5,7 +5,7 @@
 | Feature | Description | Status |
 |---|---|---|
 | `paid-media-dashboard` | Implementation of the offline Faithis portfolio dashboard | T1-T4 complete, T5/T6 in progress |
-| `fm-signal-redesign` | Static visual system plus bounded Motion interactions implemented | T1-T6 complete |
+| `fm-signal-redesign` | Final FM Signal experience with hypothesis and QA completed | T1-T8 complete |
 
 ## Cross-cutting notes
 

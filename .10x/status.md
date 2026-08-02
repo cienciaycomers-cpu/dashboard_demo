@@ -37,8 +37,8 @@ Fase 4 - Implementation in progress.
 - T4 - Hero de rentabilidad: completado y verificado.
 - T5 - Capítulos narrativos: completado y verificado.
 - T6 - Motion para React: completado y verificado.
-- T7 - Hipótesis de inversión: pendiente.
-- T8 - QA y regresión: en progreso.
+- T7 - Hipótesis de inversión: completado y verificado.
+- T8 - QA y regresión: completado y verificado.
 
 ## Decisiones aprobadas
 
