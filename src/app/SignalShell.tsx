@@ -1,16 +1,15 @@
 import { motion, useReducedMotion } from 'motion/react'
+import { useMemo, useState } from 'react'
 import type { ReactNode } from 'react'
 import { demoDataset } from '../data/demoData'
 import { availableMonths } from '../domain/analysis'
-import { buildDashboardViewModel } from '../domain/viewModels'
+import { buildDashboardViewModel, type DashboardFilters } from '../domain/viewModels'
 
 const latestMonth = availableMonths(demoDataset.facts).at(-1) ?? '2026-07'
-const view = buildDashboardViewModel(demoDataset.facts, demoDataset.today, latestMonth, { platform: 'all', campaignId: 'all', objective: 'all' })
 const currency = (value: number | null) => value === null ? 'Sin dato' : new Intl.NumberFormat('es-AR', { style: 'currency', currency: 'ARS', maximumFractionDigits: 0 }).format(value)
 const number = (value: number | null) => value === null ? 'Sin dato' : new Intl.NumberFormat('es-AR', { maximumFractionDigits: 0 }).format(value)
 const percent = (value: number | null) => value === null ? 'Sin dato' : `${value.toFixed(1)}%`
 const ratio = (value: number | null) => value === null ? 'Sin dato' : `${value.toFixed(2)}x`
-const monthLabel = new Intl.DateTimeFormat('es-AR', { month: 'long', year: 'numeric' }).format(new Date(`${latestMonth}-15T12:00:00`))
 
 function MetricCard({ label, value, detail, tone = '' }: { label: string; value: string; detail: string; tone?: string }) {
   return <article className={`signal-data-card ${tone}`}><span className="signal-card-label">{label}</span><strong className="signal-data-value">{value}</strong><span className="signal-card-detail">{detail}</span></article>
@@ -22,6 +21,12 @@ function Reveal({ children, className = '', delay = 0 }: { children: ReactNode; 
 }
 
 export function SignalShell() {
+  const [selectedMonth, setSelectedMonth] = useState(latestMonth)
+  const [filters, setFilters] = useState<DashboardFilters>({ platform: 'all', campaignId: 'all', objective: 'all' })
+  const view = useMemo(() => buildDashboardViewModel(demoDataset.facts, demoDataset.today, selectedMonth, filters), [filters, selectedMonth])
+  const monthLabel = new Intl.DateTimeFormat('es-AR', { month: 'long', year: 'numeric' }).format(new Date(`${selectedMonth}-15T12:00:00`))
+  const campaignOptions = [...new Map(demoDataset.facts.map((fact) => [fact.campaignId, fact.campaignName]))]
+  const objectiveOptions = [...new Set(demoDataset.facts.map((fact) => fact.objective))]
   const opportunity = view.alerts.find((alert) => alert.title.toLowerCase().includes('oportunidad')) ?? view.alerts[0]
   const isEfficient = view.metrics.acos.value !== null && view.metrics.acos.value < 10
   const hasPositiveMargin = view.metrics.marginAfterAds.value !== null && view.metrics.marginAfterAds.value > 0
@@ -30,6 +35,7 @@ export function SignalShell() {
 
   return <main className="signal-shell">
     <header className="signal-nav"><a className="signal-brand" href="/select"><span className="signal-symbol">FM</span><span>Signal / Paid Media Intelligence</span></a><div className="signal-nav-meta"><span>Faithis demo · {monthLabel}</span><a href="/" className="signal-nav-link">Classic dashboard ↗</a></div></header>
+    <nav className="signal-filter-bar" aria-label="Filtros de FM Signal"><label>Mes<select value={selectedMonth} onChange={(event) => setSelectedMonth(event.target.value)}>{availableMonths(demoDataset.facts).map((month) => <option key={month} value={month}>{new Intl.DateTimeFormat('es-AR', { month: 'short', year: 'numeric' }).format(new Date(`${month}-15T12:00:00`))}</option>)}</select></label><label>Plataforma<select value={filters.platform} onChange={(event) => setFilters({ ...filters, platform: event.target.value as DashboardFilters['platform'], campaignId: 'all' })}><option value="all">Todas</option><option value="Google Ads">Google Ads</option><option value="Meta Ads">Meta Ads</option></select></label><label>Campana<select value={filters.campaignId} onChange={(event) => setFilters({ ...filters, campaignId: event.target.value })}><option value="all">Todas</option>{campaignOptions.map(([id, name]) => <option key={id} value={id}>{name}</option>)}</select></label><label>Objetivo<select value={filters.objective} onChange={(event) => setFilters({ ...filters, objective: event.target.value as DashboardFilters['objective'] })}><option value="all">Todos</option>{objectiveOptions.map((objective) => <option key={objective} value={objective}>{objective}</option>)}</select></label></nav>
     <section className="signal-section signal-hero">
       <Reveal className="signal-hero-copy"><p className="signal-eyebrow">Profitability / current signal</p><h1>El rendimiento<br /><em>deja una senal.</em></h1><p className="signal-lede">Una lectura editorial del sistema de paid media: donde se construye la demanda, donde se convierte y que margen queda despues de invertir.</p><a className="signal-scroll-cue" href="#acquisition">Explorar la senal <span>↓</span></a></Reveal>
       <Reveal className="signal-hero-visual" delay={.12}><div className="signal-orbit signal-orbit-outer" aria-hidden="true" /><div className="signal-orbit signal-orbit-middle" aria-hidden="true" /><div className="signal-orbit signal-orbit-inner" aria-hidden="true" /><div className="signal-hero-metric"><span>ACOS actual</span><strong>{percent(view.metrics.acos.value)}</strong><small>{isEfficient ? 'Por debajo del objetivo' : 'Por encima del objetivo'} · objetivo 10%</small></div></Reveal>

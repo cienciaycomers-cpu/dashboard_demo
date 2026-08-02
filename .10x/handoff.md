@@ -101,6 +101,7 @@ El usuario aprobó iniciar un proyecto paralelo de rediseño visual dentro del m
 - The closing hypothesis now recommends a controlled increment and marginal ACOS validation when efficiency and margin support it.
 - Responsive, accessibility-oriented and regression checks are complete.
 - FM Signal implementation is ready for portfolio review.
+- FM Signal also exposes the same month, platform, campaign and objective filters through the shared view-model adapter.
 
 ## Correccion de lectura de ACOS y periodo
 

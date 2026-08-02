@@ -31,6 +31,20 @@ Verification:
 - `npm run build` passed.
 - `git diff --check` passed.
 
+## Portfolio extension - interactive filters
+
+- Added month, platform, campaign and objective controls to `/signal`.
+- Filters reuse `buildDashboardViewModel`, so the editorial view preserves the same current-period, comparable-period, anomaly and missing-data semantics as `/`.
+- Changing platform resets the campaign filter to avoid an invalid cross-platform selection.
+- Responsive filter layout was added for narrow screens.
+
+Verification:
+
+- `npm run typecheck` passed.
+- `npm test -- --run` passed: 13 tests.
+- `npm run build` passed.
+- `git diff --check` passed.
+
 ## T6 - bounded Motion interactions
 
 - Added `motion` as the interaction runtime for FM Signal.
