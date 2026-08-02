@@ -5,7 +5,7 @@
 | Feature | Description | Status |
 |---|---|---|
 | `paid-media-dashboard` | Implementation of the offline Faithis portfolio dashboard | T1-T4 complete, T5/T6 in progress |
-| `fm-signal-redesign` | Route shell, selector and shared view-model adapter implemented | T1-T2 complete |
+| `fm-signal-redesign` | Static visual system, hero and narrative chapters implemented | T1-T5 complete |
 
 ## Cross-cutting notes
 

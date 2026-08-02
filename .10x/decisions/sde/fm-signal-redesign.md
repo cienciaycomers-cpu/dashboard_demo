@@ -35,3 +35,17 @@ Verification:
 - `npm run typecheck` passed.
 - `npm test -- --run` passed: 13 tests.
 - `npm run build` passed.
+
+## T3-T5 - static visual system, profitability hero and narrative chapters
+
+- Replaced the route placeholder with a complete FM Signal shell at `/signal`.
+- Added the Data Cinema visual language: dark editorial base, warm gold signal, orbit visual and responsive layout.
+- Added explicit narrative chapters for Acquisition, Conversion and Profitability.
+- Reused the shared view model for ACOS, ROAS, contribution margin, break-even ACOS, margin after ads, platforms and campaigns.
+- Preserved missing-data states as `Sin dato` and kept the investment recommendation framed as a hypothesis.
+
+Verification:
+
+- `npm run typecheck` passed.
+- `npm test -- --run` passed: 13 tests.
+- `npm run build` passed.

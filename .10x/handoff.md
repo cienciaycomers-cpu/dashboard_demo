@@ -90,12 +90,14 @@ El usuario aprobó iniciar un proyecto paralelo de rediseño visual dentro del m
 - Typecheck, 10 source tests and production build pass.
 - Next task: T2 shared view-model adapter, then static visual system before motion.
 
-## T2 complete - FM Signal
+## T3-T5 complete - FM Signal static experience
 
 - Shared adapter implemented in `src/domain/viewModels.ts`.
 - FM Signal consumes shared ACOS and contribution-margin states.
 - Three adapter tests added; total suite: 13 tests passing.
-- Next task: T3 static visual system and narrative layout, before adding Motion.
+- `/signal` now contains the profitability-first hero plus Acquisition, Conversion and Profitability chapters.
+- The existing `/` dashboard remains the operational view and `/select` remains the experience selector.
+- Next task: T6 Motion for React, then T7 hypothesis refinement and T8 responsive/accessibility regression.
 
 ## Correccion de lectura de ACOS y periodo
 
