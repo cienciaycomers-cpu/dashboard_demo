@@ -38,8 +38,12 @@ body { min-height: 100vh; }
 .experience-arrow { align-self: end; color: #b99b64; font-size: 1.5rem; }
 .signal-placeholder { display: grid; align-content: center; }
 .signal-placeholder p:not(.selector-eyebrow) { margin-bottom: 28px; }
+.signal-placeholder-metrics { display: flex; gap: 48px; margin: 0 0 42px; }
+.signal-placeholder-metrics span { display: grid; gap: 8px; }
+.signal-placeholder-metrics small { color: #8e8a81; font-size: .65rem; letter-spacing: .14em; text-transform: uppercase; }
+.signal-placeholder-metrics strong { color: #d6b77b; font-family: Georgia, serif; font-size: 2.2rem; font-weight: 400; }
 .signal-placeholder a { color: #b99b64; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; }
-@media (max-width: 700px) { .experience-selector, .signal-placeholder { padding: 38px 20px; }.selector-grid { grid-template-columns: 1fr; }.experience-card { min-height: 190px; }.experience-selector h1, .signal-placeholder h1 { font-size: clamp(3.4rem, 17vw, 5.5rem); } }
+@media (max-width: 700px) { .experience-selector, .signal-placeholder { padding: 38px 20px; }.selector-grid { grid-template-columns: 1fr; }.experience-card { min-height: 190px; }.experience-selector h1, .signal-placeholder h1 { font-size: clamp(3.4rem, 17vw, 5.5rem); }.signal-placeholder-metrics { gap: 24px; } }
 body { margin: 0; min-width: 320px; min-height: 100vh; background: var(--bg); }
 button, select { font: inherit; }
 button { cursor: pointer; }

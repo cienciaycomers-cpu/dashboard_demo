@@ -20,3 +20,18 @@ Notes:
 
 - The temporary `deploy-public` staging folder is ignored and is not part of the application source.
 - FM Signal visual chapters and Motion integration are still pending.
+
+## T2 - shared view-model adapter
+
+Added `src/domain/viewModels.ts` and `src/domain/viewModels.test.ts`.
+
+- Centralizes filtered current/previous windows.
+- Exposes aggregates, derived metrics, alerts, campaign rows and platform rows.
+- Preserves explicit missing and zero-denominator behavior.
+- FM Signal shell now consumes the adapter for its initial ACOS and margin state.
+
+Verification:
+
+- `npm run typecheck` passed.
+- `npm test -- --run` passed: 13 tests.
+- `npm run build` passed.

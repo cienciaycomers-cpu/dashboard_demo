@@ -32,8 +32,8 @@ Fase 4 - Implementation in progress.
 ### FM Signal tasks
 
 - T1 - Rutas `/`, `/select` y `/signal` + selector: completado y verificado.
-- T2 - View-model adapter compartido: pendiente.
-- T3 - Sistema visual FM Signal: pendiente.
+- T2 - View-model adapter compartido: completado y verificado.
+- T3 - Sistema visual FM Signal: en progreso.
 - T4 - Hero de rentabilidad: pendiente.
 - T5 - Capítulos narrativos: pendiente.
 - T6 - Motion para React: pendiente.

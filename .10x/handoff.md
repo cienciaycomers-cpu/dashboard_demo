@@ -90,6 +90,13 @@ El usuario aprobó iniciar un proyecto paralelo de rediseño visual dentro del m
 - Typecheck, 10 source tests and production build pass.
 - Next task: T2 shared view-model adapter, then static visual system before motion.
 
+## T2 complete - FM Signal
+
+- Shared adapter implemented in `src/domain/viewModels.ts`.
+- FM Signal consumes shared ACOS and contribution-margin states.
+- Three adapter tests added; total suite: 13 tests passing.
+- Next task: T3 static visual system and narrative layout, before adding Motion.
+
 ## Correccion de lectura de ACOS y periodo
 
 - El periodo visible se expresa como mes en curso o mes calendario.
