@@ -16,6 +16,20 @@ Verification:
 - `npm test -- --run` passed: 10 tests in the source tree.
 - `npm run build` passed.
 
+## T6 - bounded Motion interactions
+
+- Added `motion` as the interaction runtime for FM Signal.
+- Added viewport reveal transitions for the hero, profitability proof and narrative chapters.
+- Added restrained orbit drift to the hero visual.
+- Added `prefers-reduced-motion` handling to remove animated orbit drift and skip reveal animation.
+- Kept `/` independent from the new interaction layer.
+
+Verification:
+
+- `npm run typecheck` passed.
+- `npm test -- --run` passed: 13 tests.
+- `npm run build` passed.
+
 Notes:
 
 - The temporary `deploy-public` staging folder is ignored and is not part of the application source.

@@ -1,3 +1,5 @@
+import { motion, useReducedMotion } from 'motion/react'
+import type { ReactNode } from 'react'
 import { demoDataset } from '../data/demoData'
 import { availableMonths } from '../domain/analysis'
 import { buildDashboardViewModel } from '../domain/viewModels'
@@ -26,6 +28,11 @@ function MetricCard({ label, value, detail, tone = '' }: { label: string; value:
   </article>
 }
 
+function Reveal({ children, className = '', delay = 0 }: { children: ReactNode; className?: string; delay?: number }) {
+  const reducedMotion = useReducedMotion()
+  return <motion.div className={className} initial={reducedMotion ? false : { opacity: 0, y: 24 }} whileInView={reducedMotion ? undefined : { opacity: 1, y: 0 }} viewport={{ once: true, amount: .18 }} transition={reducedMotion ? undefined : { duration: .72, delay, ease: [0.22, 1, 0.36, 1] }}>{children}</motion.div>
+}
+
 export function SignalShell() {
   const opportunity = view.alerts.find((alert) => alert.title.toLowerCase().includes('oportunidad')) ?? view.alerts[0]
   const isEfficient = view.metrics.acos.value !== null && view.metrics.acos.value < 10
@@ -37,26 +44,26 @@ export function SignalShell() {
     </header>
 
     <section className="signal-section signal-hero">
-      <div className="signal-hero-copy">
+      <Reveal className="signal-hero-copy">
         <p className="signal-eyebrow">Profitability / current signal</p>
         <h1>El rendimiento<br /><em>deja una señal.</em></h1>
         <p className="signal-lede">Una lectura editorial del sistema de paid media: dónde se construye la demanda, dónde se convierte y qué margen queda después de invertir.</p>
         <a className="signal-scroll-cue" href="#acquisition">Explorar la señal <span>↓</span></a>
-      </div>
-      <div className="signal-hero-visual" aria-label="ACOS actual contra objetivo">
+      </Reveal>
+      <Reveal className="signal-hero-visual" delay={.12}>
         <div className="signal-orbit signal-orbit-outer" />
         <div className="signal-orbit signal-orbit-middle" />
         <div className="signal-orbit signal-orbit-inner" />
         <div className="signal-hero-metric"><span>ACOS actual</span><strong>{percent(view.metrics.acos.value)}</strong><small>{isEfficient ? 'Por debajo del objetivo' : 'Por encima del objetivo'} · objetivo 10%</small></div>
-      </div>
+      </Reveal>
     </section>
 
-    <section className="signal-proof-grid signal-section" aria-label="Indicadores de rentabilidad">
+    <motion.section className="signal-proof-grid signal-section" aria-label="Indicadores de rentabilidad" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true, amount: .2 }} transition={{ duration: .8 }}>
       <MetricCard label="ROAS" value={ratio(view.metrics.roas.value)} detail="facturación bruta / inversión" tone={isEfficient ? 'signal-positive' : ''} />
       <MetricCard label="Margen de contribución" value={currency(view.metrics.contributionMargin.value)} detail="antes de medios pagos" />
       <MetricCard label="ACOS de equilibrio" value={percent(view.metrics.breakEvenAcos.value)} detail="límite de rentabilidad" />
       <MetricCard label="Margen después de ads" value={currency(view.metrics.marginAfterAds.value)} detail="resultado del período" tone="signal-accent" />
-    </section>
+    </motion.section>
 
     <section id="acquisition" className="signal-chapter signal-chapter-dark">
       <div className="signal-section">

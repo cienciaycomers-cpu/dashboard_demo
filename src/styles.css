@@ -139,6 +139,8 @@ h3 { margin-top: 6px; font-size: 1.05rem; letter-spacing: -.02em; }
 .signal-scroll-cue span { color: #c8ad78; font-size: 18px; line-height: 10px; }
 .signal-hero-visual { min-height: 520px; position: relative; display: grid; place-items: center; }
 .signal-orbit { position: absolute; border: 1px solid rgba(200,173,120,.32); border-radius: 50%; transform: rotate(-18deg); }
+.signal-orbit-outer { animation: signal-drift 18s ease-in-out infinite alternate; }
+.signal-orbit-middle { animation: signal-drift-reverse 14s ease-in-out infinite alternate; }
 .signal-orbit::after { content: ''; position: absolute; width: 8px; height: 8px; border-radius: 50%; background: #c8ad78; box-shadow: 0 0 24px #c8ad78; }
 .signal-orbit-outer { width: min(500px, 78vw); height: min(500px, 78vw); }
 .signal-orbit-outer::after { top: 12%; right: 7%; }
@@ -193,3 +195,6 @@ h3 { margin-top: 6px; font-size: 1.05rem; letter-spacing: -.02em; }
 .signal-footer span:first-child { color: #c8ad78; }
 .signal-footer span:nth-child(2) { margin-right: auto; }
 @media (max-width: 760px) { .signal-section, .signal-nav, .signal-footer { width: min(100% - 36px, 1320px); }.signal-nav, .signal-nav-meta, .signal-footer { align-items: flex-start; flex-direction: column; gap: 13px; }.signal-nav-meta { width: 100%; }.signal-hero { min-height: auto; grid-template-columns: 1fr; gap: 42px; padding-top: 72px; padding-bottom: 70px; }.signal-hero-visual { min-height: 360px; }.signal-proof-grid, .signal-metric-row { grid-template-columns: repeat(2, 1fr); }.signal-proof-grid { margin-bottom: 70px; }.signal-chapter { padding: 76px 0; }.signal-chapter-head, .signal-chapter-profit .signal-profit-layout { grid-template-columns: 1fr; gap: 32px; margin-bottom: 44px; }.signal-profit-number { padding: 34px 0 0; border-top: 1px solid rgba(33,29,24,.25); border-left: 0; }.signal-hypothesis { align-items: flex-start; flex-direction: column; padding-top: 76px; padding-bottom: 76px; }.signal-footer span:nth-child(2) { margin-right: 0; } }
+@keyframes signal-drift { from { transform: rotate(-18deg) scale(1); } to { transform: rotate(-10deg) scale(1.035); } }
+@keyframes signal-drift-reverse { from { transform: rotate(38deg) scale(1); } to { transform: rotate(28deg) scale(.96); } }
+@media (prefers-reduced-motion: reduce) { .signal-orbit-outer, .signal-orbit-middle { animation: none; } }

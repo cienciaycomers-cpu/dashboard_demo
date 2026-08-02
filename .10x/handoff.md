@@ -97,7 +97,8 @@ El usuario aprobó iniciar un proyecto paralelo de rediseño visual dentro del m
 - Three adapter tests added; total suite: 13 tests passing.
 - `/signal` now contains the profitability-first hero plus Acquisition, Conversion and Profitability chapters.
 - The existing `/` dashboard remains the operational view and `/select` remains the experience selector.
-- Next task: T6 Motion for React, then T7 hypothesis refinement and T8 responsive/accessibility regression.
+- Motion for React is now integrated with bounded reveal transitions and reduced-motion handling.
+- Next task: T7 hypothesis refinement and T8 responsive/accessibility regression.
 
 ## Correccion de lectura de ACOS y periodo
 

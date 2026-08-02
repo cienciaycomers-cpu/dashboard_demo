@@ -36,9 +36,9 @@ Fase 4 - Implementation in progress.
 - T3 - Sistema visual FM Signal: completado y verificado.
 - T4 - Hero de rentabilidad: completado y verificado.
 - T5 - Capítulos narrativos: completado y verificado.
-- T6 - Motion para React: pendiente.
+- T6 - Motion para React: completado y verificado.
 - T7 - Hipótesis de inversión: pendiente.
-- T8 - QA y regresión: pendiente.
+- T8 - QA y regresión: en progreso.
 
 ## Decisiones aprobadas
 
