@@ -110,3 +110,11 @@ El usuario aprobó iniciar un proyecto paralelo de rediseño visual dentro del m
 - ACOS menor al 10% se trata como senal de eficiencia y posible oportunidad de escalar.
 - La alerta de oportunidad aparece cuando el ACOS esta debajo del benchmark y la inversion no aumento mas de 10% contra la base comparable.
 - La regla fue cubierta con un test automatizado adicional.
+
+## Delivery complete
+
+- Production URL: `https://dashboard-demo-ecomers.vercel.app`.
+- Deployment URL: `https://dashboard-demo-8bifylcd5-ecomers.vercel.app`.
+- Public routes `/`, `/select` and `/signal` returned HTTP 200.
+- DevOps and SRE handoffs are documented in `.10x/decisions/devops/` and `.10x/decisions/sre/`.
+- QA release review: `.10x/reviews/2026-08-13-deploy-review.md`.

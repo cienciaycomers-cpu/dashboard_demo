@@ -6,7 +6,7 @@ Dashboard web de seguimiento de paid media para el cliente demo Faithis.
 
 ## Fase actual
 
-Fase 4 - Implementation in progress.
+Fase 6 - Delivery complete.
 
 ## Task progress
 
@@ -77,4 +77,11 @@ Fase 4 - Implementation in progress.
 
 ## Estado de commit
 
-No se pudo crear el commit de estado porque esta carpeta no esta dentro de un repositorio Git operativo.
+Release documentado y publicado en GitHub.
+
+## Delivery
+
+- Produccion: `https://dashboard-demo-ecomers.vercel.app`
+- Deploy verificado: `https://dashboard-demo-8bifylcd5-ecomers.vercel.app`
+- Rutas verificadas: `/`, `/select`, `/signal`
+- Rollback: promover el ultimo deploy conocido como estable desde Vercel o redeployar el commit anterior.
