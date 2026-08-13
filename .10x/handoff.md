@@ -118,3 +118,4 @@ El usuario aprobó iniciar un proyecto paralelo de rediseño visual dentro del m
 - Public routes `/`, `/select` and `/signal` returned HTTP 200.
 - DevOps and SRE handoffs are documented in `.10x/decisions/devops/` and `.10x/decisions/sre/`.
 - QA release review: `.10x/reviews/2026-08-13-deploy-review.md`.
+- Direct-route 404 fixed with `vercel.json` SPA rewrite and redeployed.

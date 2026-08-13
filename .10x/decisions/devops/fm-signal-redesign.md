@@ -23,3 +23,5 @@
 ## Verification
 
 - Public HTTP checks returned `200` for `/`, `/select` and `/signal`.
+- Added `vercel.json` SPA rewrite so direct navigation to `/select` and `/signal` resolves to the Vite entry instead of a Vercel 404.
+- The rewrite fix was redeployed to production as `https://dashboard-demo-5e88j4c5s-ecomers.vercel.app` with the stable alias `https://dashboard-demo-ecomers.vercel.app`.
