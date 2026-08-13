@@ -12,6 +12,7 @@ Production deployment is ready for portfolio publication.
 - Public routes `/`, `/select` and `/signal` returned HTTP 200.
 - Direct deep-link navigation is covered by the Vercel SPA rewrite in `vercel.json`.
 - Selector and FM Signal copy were corrected to use proper Spanish accents and UTF-8 characters.
+- Added a runtime mojibake repair guard in `src/main.tsx` to protect all visible routes, including the classic dashboard.
 - No external data source is required at runtime.
 
 ## Residual note
